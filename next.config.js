@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['localhost','mosaic.scdn.co'],
+        domains: ['localhost','mosaic.scdn.co','i.scdn.co'],
     },
     env : {
         SPOTIFY_CLIENT_ID : process.env.SPOTIFY_CLIENT_ID,

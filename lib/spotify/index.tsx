@@ -46,3 +46,11 @@ export const getUsersPlaylists = async (userId: string,access_token: string) => 
     return result.data;
 }
 
+export const getPlaylistItems= async (playlistId: string,access_token: string) => {
+    let result = await axios.get(baseUrl+`/playlists/${playlistId}/tracks`,
+        { headers: {'Authorization' : "Bearer "+access_token } 
+    })
+
+    return result.data;
+}
+
